@@ -106,7 +106,7 @@ void display_turn_off(void) {
 const char *get_layer_label(uint8_t layer) {
     const char *layer_name = layer_upper_name(layer);
     static char buf[32];
-    const char *icon;
+    const char *icon = EH_SYMBOL_LAYER;
     switch (layer) {
         case 3:
         icon = EH_SYMBOL_LAYER_FIGMA;
@@ -115,7 +115,7 @@ const char *get_layer_label(uint8_t layer) {
         icon = EH_SYMBOL_LAYER_FIGMA;
         break;
     }
-    sprintf(buf, EH_SYMBOL_LAYER " %s", layer_name);
+    sprintf(buf, "%s %s", icon, layer_name);
     return buf;
 }
 
