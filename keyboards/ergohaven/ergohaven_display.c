@@ -106,6 +106,16 @@ void display_turn_off(void) {
 const char *get_layer_label(uint8_t layer) {
     const char *layer_name = layer_upper_name(layer);
     static char buf[32];
+    const char *icon;
+    switch (layer) {
+        case 3:
+        icon = EH_SYMBOL_LAYER_FIGMA;
+        break;
+         case 4:
+        icon = EH_SYMBOL_LAYER_FIGMA;
+        break;
+    }
+    
     sprintf(buf, EH_SYMBOL_LAYER " %s", layer_name);
     return buf;
 }
