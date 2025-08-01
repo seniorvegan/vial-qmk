@@ -115,7 +115,6 @@ const char *get_layer_label(uint8_t layer) {
         icon = EH_SYMBOL_LAYER_FIGMA;
         break;
     }
-    
     sprintf(buf, EH_SYMBOL_LAYER " %s", layer_name);
     return buf;
 }
