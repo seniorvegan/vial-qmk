@@ -278,6 +278,8 @@ const char *basic_keycode_to_str(uint16_t keycode) {
             return "Alt";
         case KC_RIGHT_GUI:
             return "Gui";
+        case TD(3)
+            return "Typography";    
 
         default:
             return "Unkn";
